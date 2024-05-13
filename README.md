@@ -7,7 +7,7 @@ This template should help you to access and execute different aspects (activitie
 2. Vue 3 (project created using Vite)
 3. Node (this must be installed in the local enviroment)
 
-## Project Set up instructions
+# Project Set up instructions
 1. Clone the repository to your local environment.
 2. Use terminal (Git bash) for next steps.
 3. Go to the root directory of the project i.e. 'megaport-assessment'
