@@ -26,7 +26,6 @@
 
 <template>
 	<form @submit.prevent="handleAddItem()">
-		<h2 class="title">Add New Baked Good</h2>
 		<div class="formElems">
 			<div>
 				<label for="id">ID:</label>
@@ -62,7 +61,7 @@
 		font-weight: medium;
 		color: #00dd39;
 	}
-	button {
+	button[type='submit'] {
 		height: 25px;
 		margin: 5px 0px;
 		background-color: #4445E5;

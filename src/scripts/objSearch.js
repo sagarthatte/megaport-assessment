@@ -9,7 +9,7 @@ function getValue(path='', obj={}) {
     let currentObj = obj;
 
     for (const prop of pathArr) {
-        if (!currentObj.hasOwnProperty(prop)) {
+        if (!Object.hasOwn(currentObj, prop)) {
             return 'Requested property not detected.';
         }
         currentObj = currentObj[prop];

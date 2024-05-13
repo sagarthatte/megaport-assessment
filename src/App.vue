@@ -1,7 +1,7 @@
 <script setup>
 	import BakedGoods from './components/BakedGoods.vue'
 	import AddItem from './components/AddItem.vue'
-	import Filter from './components/Filter.vue'
+	import FilterItems from './components/FilterItems.vue'
 	import { reactive, ref } from 'vue';
 
 
@@ -315,11 +315,12 @@
 <template>
 	<div class="bakedGoodsData">
 		<h1 class="title">Baked Goods</h1>
-		<Filter @filterItems="handleFilterItems" />
+		<FilterItems @filterItems="handleFilterItems" />
 		<BakedGoods :data="bakedGoodsList" :search-term="searchTerm"/>
 	</div>
 
 	<div class="addItemsForm">
+		<h2 class="title">Add New Baked Good</h2>
 		<AddItem @addItem="handleAddItem" />
 	</div>
 		
@@ -327,7 +328,7 @@
 
 <style scoped>
 	.addItemsForm {
-		margin: 40px 5px;
+		margin: 52px 5px;
 		flex-basis: 40%;
 	}
 	.bakedGoodsData {
