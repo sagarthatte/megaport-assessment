@@ -40,24 +40,6 @@
 			"id": "0001",
 			"type": "donut",
 			"name": "Cake",
-			"topping": "Chocolate Chocolate"
-		},
-		{
-			"id": "0001",
-			"type": "donut",
-			"name": "Cake",
-			"topping": "Chocolate Maple"
-		},
-		{
-			"id": "0001",
-			"type": "donut",
-			"name": "Cake",
-			"topping": "Blueberry None"
-		},
-		{
-			"id": "0001",
-			"type": "donut",
-			"name": "Cake",
 			"topping": "Blueberry Glazed"
 		},
 		{
