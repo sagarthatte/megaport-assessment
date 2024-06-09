@@ -67,7 +67,7 @@ function sortBakedGoods(prop, order = "asc") {
 				</tr>
 			</thead>
 			<tbody>
-				<template v-if="filteredList.length">
+				<template v-if="filteredList">
 					<tr v-for="item in filteredList" :key="item.id">
 						<td>{{ item.id }}</td>
 						<td>{{ item.type }}</td>

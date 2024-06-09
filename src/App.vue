@@ -11,6 +11,7 @@ let bakedGoodsList = ref(null);
 onMounted(() => {
 	ItemService.getItems()
 		.then((response) => {
+			console.log(response);
 			bakedGoodsList.value = response.data;
 		})
 		.catch((error) => {
