@@ -1,9 +1,9 @@
 // Note: Documentation was referred at https://dev.megaport.com
 async function fetchEnabledLocations () {
-    var myHeaders = new Headers();
+    let myHeaders = new Headers();
     myHeaders.append('Content-Type', 'application/json');
 
-    var requestOptions = {
+    let requestOptions = {
         method: 'GET',
         headers: myHeaders,
         redirect: 'follow'

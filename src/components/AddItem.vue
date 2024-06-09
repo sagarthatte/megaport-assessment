@@ -1,9 +1,9 @@
 <script setup>
-	import { ref, defineEmits } from 'vue';
+	import { ref } from 'vue';
 
 	const emit = defineEmits(['addItem']);
 
-	let formValues = ref({
+	const formValues = ref({
 		id: '0001',
 		type: '',
 		name: '',
@@ -11,7 +11,7 @@
 	});
 
 	function handleAddItem () {
-		let addItemData = { ...formValues };
+		const addItemData = { ...formValues };
 		// Emit event with form data for main app.
 		emit('addItem', addItemData);
 

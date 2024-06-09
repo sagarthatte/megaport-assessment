@@ -19,12 +19,12 @@ function getValue(path='', obj={}) {
 
 }
 
-var targetObj = { name: 'Megaport', address: { office: { unit: 'Level 3', street: '825 Ann Street', suburb: 'Fortitude Valley', city:
+let targetObj = { name: 'Megaport', address: { office: { unit: 'Level 3', street: '825 Ann Street', suburb: 'Fortitude Valley', city:
 'Brisbane', state: 'Queensland', postcode: 4006, }, }, industry: { type: 'Internet and telecommunications',
 asxListed: true, }, };
 
-var srcPath1 = 'address.office.suburb';
-var srcPath2 = 'industry.asxListed';
+let srcPath1 = 'address.office.suburb';
+let srcPath2 = 'industry.asxListed';
 
 const suburbValue = getValue(srcPath1, targetObj);
 const asxListedValue = getValue(srcPath2, targetObj);
