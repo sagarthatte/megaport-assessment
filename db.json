@@ -130,12 +130,6 @@
 			"id": "0002",
 			"type": "donut",
 			"name": "Raised",
-			"topping": "Regular Sugar"
-		},
-		{
-			"id": "0002",
-			"type": "donut",
-			"name": "Raised",
 			"topping": "Regular Chocolate"
 		},
 		{
@@ -154,31 +148,13 @@
 			"id": "0003",
 			"type": "donut",
 			"name": "Old Fashioned",
-			"topping": "Regular Glazed"
-		},
-		{
-			"id": "0003",
-			"type": "donut",
-			"name": "Old Fashioned",
 			"topping": "Regular Chocolate"
 		},
 		{
 			"id": "0003",
 			"type": "donut",
 			"name": "Old Fashioned",
-			"topping": "Regular Maple"
-		},
-		{
-			"id": "0003",
-			"type": "donut",
-			"name": "Old Fashioned",
 			"topping": "Chocolate None"
-		},
-		{
-			"id": "0003",
-			"type": "donut",
-			"name": "Old Fashioned",
-			"topping": "Chocolate Glazed"
 		},
 		{
 			"id": "0003",
@@ -227,12 +203,6 @@
 			"type": "filled",
 			"name": "Filled",
 			"topping": "Regular Powdered Sugar"
-		},
-		{
-			"id": "0006",
-			"type": "filled",
-			"name": "Filled",
-			"topping": "Regular Chocolate"
 		},
 		{
 			"id": "0006",
