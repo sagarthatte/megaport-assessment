@@ -11,6 +11,6 @@ const apiClient = axios.create({
 
 export default {
 	getItems() {
-		return apiClient.get("/items");
+		return apiClient.get("/goods");
 	}
 };
