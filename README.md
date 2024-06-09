@@ -21,6 +21,7 @@ This template should help you to access and execute different aspects (activitie
     ```sh
     npm run dev
     ```
+    Go to http://localhost:5173 (or relevant URL shown in terminal)
 6. For activity #2 and #3, go to the scripts directory as follows:
     ```
     cd src/scripts
