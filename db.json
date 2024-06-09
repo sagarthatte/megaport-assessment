@@ -7,6 +7,12 @@
 			"topping": "Regular Glazed"
 		},
 		{
+			"id": "0002",
+			"type": "donut",
+			"name": "Patty cake",
+			"topping": "I don't know"
+		},
+		{
 			"id": "0001",
 			"type": "donut",
 			"name": "Cake",
