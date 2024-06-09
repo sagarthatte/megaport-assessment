@@ -7,46 +7,10 @@
 			"topping": "Regular Glazed"
 		},
 		{
-			"id": "0002",
-			"type": "donut",
-			"name": "Patty cake",
-			"topping": "I don't know"
-		},
-		{
 			"id": "0001",
 			"type": "donut",
 			"name": "Cake",
 			"topping": "Regular Sugar"
-		},
-		{
-			"id": "0001",
-			"type": "donut",
-			"name": "Cake",
-			"topping": "Regular Powdered Sugar"
-		},
-		{
-			"id": "0001",
-			"type": "donut",
-			"name": "Cake",
-			"topping": "Regular Chocolate with Sprinkles"
-		},
-		{
-			"id": "0001",
-			"type": "donut",
-			"name": "Cake",
-			"topping": "Regular Chocolate"
-		},
-		{
-			"id": "0001",
-			"type": "donut",
-			"name": "Cake",
-			"topping": "Regular Maple"
-		},
-		{
-			"id": "0001",
-			"type": "donut",
-			"name": "Cake",
-			"topping": "Chocolate None"
 		},
 		{
 			"id": "0001",
