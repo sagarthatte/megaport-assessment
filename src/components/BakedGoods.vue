@@ -68,17 +68,19 @@ function sortBakedGoods(prop, order = "asc") {
 			</thead>
 			<tbody>
 				<template v-if="filteredList">
-					<tr v-for="item in filteredList" :key="item.id">
-						<td>{{ item.id }}</td>
-						<td>{{ item.type }}</td>
-						<td>{{ item.name }}</td>
-						<td>{{ item.topping }}</td>
-					</tr>
-				</template>
-				<template v-else>
-					<tr>
-						<td colspan="4">No matching data</td>
-					</tr>
+					<template v-if="filteredList.length">
+						<tr v-for="item in filteredList" :key="item.id + '_' + item.topping">
+							<td>{{ item.id }}</td>
+							<td>{{ item.type }}</td>
+							<td>{{ item.name }}</td>
+							<td>{{ item.topping }}</td>
+						</tr>
+					</template>
+					<template v-else>
+						<tr>
+							<td colspan="4">No matching data</td>
+						</tr>
+					</template>
 				</template>
 			</tbody>
 		</table>

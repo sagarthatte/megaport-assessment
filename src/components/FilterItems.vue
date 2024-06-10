@@ -1,14 +1,5 @@
 <script setup>
-import { ref, watch } from "vue";
-
 const emit = defineEmits(["filterItems"]);
-const searchKey = ref("");
-
-watch(searchKey, () => {
-	if (searchKey.value) {
-		emit("filterItems", searchKey.value);
-	}
-});
 </script>
 
 <template>
@@ -18,7 +9,7 @@ watch(searchKey, () => {
 			type="text"
 			name="searchTerm"
 			id="searchTerm"
-			v-model="searchKey"
+			@input="$emit('filterItems', $event.target.value)"
 			style="height: 25px"
 		/>
 	</div>

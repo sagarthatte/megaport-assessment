@@ -1,18 +1,17 @@
 <script setup>
-import BakedGoods from "./components/BakedGoods.vue";
-import AddItem from "./components/AddItem.vue";
-import FilterItems from "./components/FilterItems.vue";
+import BakedGoods from "@/components/BakedGoods.vue";
+import AddItem from "@/components/AddItem.vue";
+import FilterItems from "@/components/FilterItems.vue";
 import ItemService from "@/services/ItemService";
-import { onMounted, reactive, ref } from "vue";
+import { onMounted, ref } from "vue";
 
 const searchTerm = ref("");
-let bakedGoodsList = ref(null);
+let itemsList = ref([]);
 
 onMounted(() => {
 	ItemService.getItems()
 		.then((response) => {
-			console.log(response);
-			bakedGoodsList.value = response.data;
+			itemsList.value = response.data;
 		})
 		.catch((error) => {
 			console.log(error);
@@ -20,7 +19,7 @@ onMounted(() => {
 });
 
 function handleAddItem(addItemData) {
-	bakedGoodsList.value.push(addItemData._rawValue);
+	itemsList.value.push(addItemData._rawValue);
 
 	document.getElementById("addItemMessage").style.display = "inline";
 
@@ -38,7 +37,7 @@ function handleFilterItems(value) {
 	<div class="bakedGoodsData">
 		<h1 class="title">Baked Goods</h1>
 		<FilterItems @filterItems="handleFilterItems" />
-		<BakedGoods :data="bakedGoodsList" :search-term="searchTerm" />
+		<BakedGoods :data="itemsList" :search-term="searchTerm" />
 	</div>
 
 	<div class="addItemsForm">
