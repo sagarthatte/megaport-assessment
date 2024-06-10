@@ -1,6 +1,4 @@
-<script setup>
-const emit = defineEmits(["filterItems"]);
-</script>
+<script setup></script>
 
 <template>
 	<div class="search">

@@ -6,7 +6,7 @@ import ItemService from "@/services/ItemService";
 import { onMounted, ref } from "vue";
 
 const searchTerm = ref("");
-let itemsList = ref([]);
+const itemsList = ref([]);
 
 onMounted(() => {
 	ItemService.getItems()
@@ -19,7 +19,7 @@ onMounted(() => {
 });
 
 function handleAddItem(addItemData) {
-	itemsList.value.push(addItemData._rawValue);
+	itemsList.value.unshift(addItemData);
 
 	document.getElementById("addItemMessage").style.display = "inline";
 
@@ -54,11 +54,5 @@ function handleFilterItems(value) {
 .bakedGoodsData {
 	margin: 10px 5px;
 	flex-basis: 60%;
-}
-
-.caption {
-	position: fixed;
-	top: 20px;
-	left: 100px;
 }
 </style>
